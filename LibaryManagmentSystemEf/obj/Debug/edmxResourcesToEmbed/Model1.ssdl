@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibaryManagmentSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblBook">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="30" />
+    <Property Name="Author" Type="varchar" MaxLength="30" />
+    <Property Name="ISBN" Type="varchar" MaxLength="30" />
+    <Property Name="Publication" Type="varchar" MaxLength="30" />
+    <Property Name="Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="TblBorrow">
+    <Key>
+      <PropertyRef Name="BorrowID" />
+    </Key>
+    <Property Name="BorrowID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookID" Type="int" />
+    <Property Name="MemberID" Type="int" />
+    <Property Name="DateBorrow" Type="date" />
+    <Property Name="DateReturn" Type="date" />
+  </EntityType>
+  <EntityType Name="TblMember">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberName" Type="varchar" MaxLength="20" />
+    <Property Name="MemberSurname" Type="varchar" MaxLength="20" />
+    <Property Name="MemberPhone" Type="varchar" MaxLength="20" />
+    <Property Name="MemberEmail" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="TblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="20" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="20" />
+    <Property Name="UserType" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_TblBorrow_TblBook">
+    <End Role="TblBook" Type="Self.TblBook" Multiplicity="0..1" />
+    <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblBook">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="TblBorrow">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblBorrow_TblMember">
+    <End Role="TblMember" Type="Self.TblMember" Multiplicity="0..1" />
+    <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblMember">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="TblBorrow">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibaryManagmentSystemModelStoreContainer">
+    <EntitySet Name="TblBook" EntityType="Self.TblBook" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblBorrow" EntityType="Self.TblBorrow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblMember" EntityType="Self.TblMember" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUser" EntityType="Self.TblUser" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblBorrow_TblBook" Association="Self.FK_TblBorrow_TblBook">
+      <End Role="TblBook" EntitySet="TblBook" />
+      <End Role="TblBorrow" EntitySet="TblBorrow" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblBorrow_TblMember" Association="Self.FK_TblBorrow_TblMember">
+      <End Role="TblMember" EntitySet="TblMember" />
+      <End Role="TblBorrow" EntitySet="TblBorrow" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LibaryManagmentSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TblBook">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="30" />
+          <Property Name="Author" Type="varchar" MaxLength="30" />
+          <Property Name="ISBN" Type="varchar" MaxLength="30" />
+          <Property Name="Publication" Type="varchar" MaxLength="30" />
+          <Property Name="Quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="TblBorrow">
+          <Key>
+            <PropertyRef Name="BorrowID" />
+          </Key>
+          <Property Name="BorrowID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookID" Type="int" />
+          <Property Name="MemberID" Type="int" />
+          <Property Name="DateBorrow" Type="date" />
+          <Property Name="DateReturn" Type="date" />
+        </EntityType>
+        <EntityType Name="TblMember">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberName" Type="varchar" MaxLength="20" />
+          <Property Name="MemberSurname" Type="varchar" MaxLength="20" />
+          <Property Name="MemberPhone" Type="varchar" MaxLength="20" />
+          <Property Name="MemberEmail" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="TblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="20" />
+          <Property Name="UserPassword" Type="varchar" MaxLength="20" />
+          <Property Name="UserType" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_TblBorrow_TblBook">
+          <End Role="TblBook" Type="Self.TblBook" Multiplicity="0..1" />
+          <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblBook">
+              <PropertyRef Name="BookID" />
+            </Principal>
+            <Dependent Role="TblBorrow">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblBorrow_TblMember">
+          <End Role="TblMember" Type="Self.TblMember" Multiplicity="0..1" />
+          <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblMember">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="TblBorrow">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LibaryManagmentSystemModelStoreContainer">
+          <EntitySet Name="TblBook" EntityType="Self.TblBook" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblBorrow" EntityType="Self.TblBorrow" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblMember" EntityType="Self.TblMember" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblUser" EntityType="Self.TblUser" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TblBorrow_TblBook" Association="Self.FK_TblBorrow_TblBook">
+            <End Role="TblBook" EntitySet="TblBook" />
+            <End Role="TblBorrow" EntitySet="TblBorrow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblBorrow_TblMember" Association="Self.FK_TblBorrow_TblMember">
+            <End Role="TblMember" EntitySet="TblMember" />
+            <End Role="TblBorrow" EntitySet="TblBorrow" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LibaryManagmentSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TblBook">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Author" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ISBN" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Publication" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <NavigationProperty Name="TblBorrow" Relationship="Self.FK_TblBorrow_TblBook" FromRole="TblBook" ToRole="TblBorrow" />
+        </EntityType>
+        <EntityType Name="TblBorrow">
+          <Key>
+            <PropertyRef Name="BorrowID" />
+          </Key>
+          <Property Name="BorrowID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookID" Type="Int32" />
+          <Property Name="MemberID" Type="Int32" />
+          <Property Name="DateBorrow" Type="DateTime" Precision="0" />
+          <Property Name="DateReturn" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="TblBook" Relationship="Self.FK_TblBorrow_TblBook" FromRole="TblBorrow" ToRole="TblBook" />
+          <NavigationProperty Name="TblMember" Relationship="Self.FK_TblBorrow_TblMember" FromRole="TblBorrow" ToRole="TblMember" />
+        </EntityType>
+        <EntityType Name="TblMember">
+          <Key>
+            <PropertyRef Name="MemberID" />
+          </Key>
+          <Property Name="MemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MemberSurname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MemberPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MemberEmail" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TblBorrow" Relationship="Self.FK_TblBorrow_TblMember" FromRole="TblMember" ToRole="TblBorrow" />
+        </EntityType>
+        <EntityType Name="TblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="UserPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="UserType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_TblBorrow_TblBook">
+          <End Role="TblBook" Type="Self.TblBook" Multiplicity="0..1" />
+          <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblBook">
+              <PropertyRef Name="BookID" />
+            </Principal>
+            <Dependent Role="TblBorrow">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblBorrow_TblMember">
+          <End Role="TblMember" Type="Self.TblMember" Multiplicity="0..1" />
+          <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblMember">
+              <PropertyRef Name="MemberID" />
+            </Principal>
+            <Dependent Role="TblBorrow">
+              <PropertyRef Name="MemberID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LibaryManagmentSystemEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TblBook" EntityType="Self.TblBook" />
+          <EntitySet Name="TblBorrow" EntityType="Self.TblBorrow" />
+          <EntitySet Name="TblMember" EntityType="Self.TblMember" />
+          <EntitySet Name="TblUser" EntityType="Self.TblUser" />
+          <AssociationSet Name="FK_TblBorrow_TblBook" Association="Self.FK_TblBorrow_TblBook">
+            <End Role="TblBook" EntitySet="TblBook" />
+            <End Role="TblBorrow" EntitySet="TblBorrow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblBorrow_TblMember" Association="Self.FK_TblBorrow_TblMember">
+            <End Role="TblMember" EntitySet="TblMember" />
+            <End Role="TblBorrow" EntitySet="TblBorrow" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LibaryManagmentSystemModelStoreContainer" CdmEntityContainer="LibaryManagmentSystemEntities1">
+          <EntitySetMapping Name="TblBook">
+            <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblBook">
+              <MappingFragment StoreEntitySet="TblBook">
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+                <ScalarProperty Name="Publication" ColumnName="Publication" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblBorrow">
+            <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblBorrow">
+              <MappingFragment StoreEntitySet="TblBorrow">
+                <ScalarProperty Name="BorrowID" ColumnName="BorrowID" />
+                <ScalarProperty Name="BookID" ColumnName="BookID" />
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="DateBorrow" ColumnName="DateBorrow" />
+                <ScalarProperty Name="DateReturn" ColumnName="DateReturn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblMember">
+            <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblMember">
+              <MappingFragment StoreEntitySet="TblMember">
+                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+                <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+                <ScalarProperty Name="MemberSurname" ColumnName="MemberSurname" />
+                <ScalarProperty Name="MemberPhone" ColumnName="MemberPhone" />
+                <ScalarProperty Name="MemberEmail" ColumnName="MemberEmail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblUser">
+            <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblUser">
+              <MappingFragment StoreEntitySet="TblUser">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

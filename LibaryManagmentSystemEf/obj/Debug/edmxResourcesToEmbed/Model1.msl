@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibaryManagmentSystemModelStoreContainer" CdmEntityContainer="LibaryManagmentSystemEntities1">
+    <EntitySetMapping Name="TblBook">
+      <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblBook">
+        <MappingFragment StoreEntitySet="TblBook">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblBorrow">
+      <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblBorrow">
+        <MappingFragment StoreEntitySet="TblBorrow">
+          <ScalarProperty Name="BorrowID" ColumnName="BorrowID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="DateBorrow" ColumnName="DateBorrow" />
+          <ScalarProperty Name="DateReturn" ColumnName="DateReturn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMember">
+      <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblMember">
+        <MappingFragment StoreEntitySet="TblMember">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberSurname" ColumnName="MemberSurname" />
+          <ScalarProperty Name="MemberPhone" ColumnName="MemberPhone" />
+          <ScalarProperty Name="MemberEmail" ColumnName="MemberEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUser">
+      <EntityTypeMapping TypeName="LibaryManagmentSystemModel.TblUser">
+        <MappingFragment StoreEntitySet="TblUser">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

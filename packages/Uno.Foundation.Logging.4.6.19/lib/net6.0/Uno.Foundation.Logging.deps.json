@@ -1,0 +1,94 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Uno.Foundation.Logging/255.255.255.255": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.NetAnalyzers": "7.0.0-preview1.22403.2",
+          "Microsoft.NETFramework.ReferenceAssemblies": "1.0.2",
+          "Microsoft.Net.Compilers.Toolset": "4.4.0-2.final",
+          "Microsoft.SourceLink.GitHub": "1.1.1"
+        },
+        "runtime": {
+          "Uno.Foundation.Logging.dll": {}
+        }
+      },
+      "Microsoft.Build.Tasks.Git/1.1.1": {},
+      "Microsoft.CodeAnalysis.NetAnalyzers/7.0.0-preview1.22403.2": {},
+      "Microsoft.Net.Compilers.Toolset/4.4.0-2.final": {},
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net461": "1.0.2"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.2": {},
+      "Microsoft.SourceLink.Common/1.1.1": {},
+      "Microsoft.SourceLink.GitHub/1.1.1": {
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.1.1",
+          "Microsoft.SourceLink.Common": "1.1.1"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Uno.Foundation.Logging/255.255.255.255": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Build.Tasks.Git/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AT3HlgTjsqHnWpBHSNeR0KxbLZD7bztlZVj7I8vgeYG9SYqbeFGh0TM/KVtC6fg53nrWHl3VfZFvb5BiQFcY6Q==",
+      "path": "microsoft.build.tasks.git/1.1.1",
+      "hashPath": "microsoft.build.tasks.git.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.NetAnalyzers/7.0.0-preview1.22403.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rhhja0iDRZVmeKanmaPHnrhMDznCYc2aX//WaoXLz4lnyxrNifYL63C6HLx+JofbMQc/cC2aFNfOPi9qFbhCKg==",
+      "path": "microsoft.codeanalysis.netanalyzers/7.0.0-preview1.22403.2",
+      "hashPath": "microsoft.codeanalysis.netanalyzers.7.0.0-preview1.22403.2.nupkg.sha512"
+    },
+    "Microsoft.Net.Compilers.Toolset/4.4.0-2.final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-71tcpqZwCPMvJTwI8eDhbKtMAa3NFqBGsPc7jIl58Y9gw/75IyK0O+kReXiiwL4aKUXNbwXwuYaLCzZHTaOogQ==",
+      "path": "microsoft.net.compilers.toolset/4.4.0-2.final",
+      "hashPath": "microsoft.net.compilers.toolset.4.4.0-2.final.nupkg.sha512"
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5/cSEVld+px/CuRrbohO/djfg6++eR6zGpy88MgqloXvkj//WXWpFZyu/OpkXPN0u5m+dN/EVwLNYFUxD4h2+A==",
+      "path": "microsoft.netframework.referenceassemblies/1.0.2",
+      "hashPath": "microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512"
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8shzGaD5pZi4npuJYCM3de6pl0zlefcbyTIvXIiCdsTqauZ7lAhdaJVtJSqlhYid9VosFAOygBykoJ1SEOlGWA==",
+      "path": "microsoft.netframework.referenceassemblies.net461/1.0.2",
+      "hashPath": "microsoft.netframework.referenceassemblies.net461.1.0.2.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.Common/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WMcGpWKrmJmzrNeuaEb23bEMnbtR/vLmvZtkAP5qWu7vQsY59GqfRJd65sFpBszbd2k/bQ8cs8eWawQKAabkVg==",
+      "path": "microsoft.sourcelink.common/1.1.1",
+      "hashPath": "microsoft.sourcelink.common.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.GitHub/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IaJGnOv/M7UQjRJks7B6p7pbPnOwisYGOIzqCz5ilGFTApZ3ktOR+6zJ12ZRPInulBmdAf1SrGdDG2MU8g6XTw==",
+      "path": "microsoft.sourcelink.github/1.1.1",
+      "hashPath": "microsoft.sourcelink.github.1.1.1.nupkg.sha512"
+    }
+  }
+}

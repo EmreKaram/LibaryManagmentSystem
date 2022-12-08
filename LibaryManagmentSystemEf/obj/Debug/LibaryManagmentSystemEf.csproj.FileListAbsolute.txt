@@ -1,0 +1,82 @@
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\LibaryManagmentSystemEf.exe.config
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\LibaryManagmentSystemEf.exe
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\LibaryManagmentSystemEf.pdb
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.AssemblyReference.cache
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.SuggestedBindingRedirects.cache
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.Properties.Resources.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.GenerateResource.cache
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.CoreCompileInputs.cache
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.CopyComplete
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.exe
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.pdb
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\MetroFramework.Design.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\MetroFramework.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.BookForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.MemberForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.BorrowForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.UserForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.AdminForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.LoginForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Helpers.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Mvc.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Providers.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Razor.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Helpers.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Mvc.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Providers.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Razor.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.OwnerDashboardForm.resources
+C:\Users\Emre\Desktop\Emre Karam\Yazılım.Net\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.SignForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\LibaryManagmentSystemEf.exe.config
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\LibaryManagmentSystemEf.exe
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\LibaryManagmentSystemEf.pdb
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\MetroFramework.Design.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\MetroFramework.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Helpers.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Mvc.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Providers.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Razor.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Helpers.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Mvc.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Providers.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.Razor.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.AssemblyReference.cache
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.SuggestedBindingRedirects.cache
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.AdminForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.BookForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.BorrowForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.SignForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.LoginForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.MemberForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.OwnerDashboardForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.Properties.Resources.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.UserForm.resources
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.GenerateResource.cache
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.CoreCompileInputs.cache
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.csproj.CopyComplete
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.exe
+C:\Users\Emre\Desktop\Code\LibaryManagmentSystemEf\LibaryManagmentSystemEf\obj\Debug\LibaryManagmentSystemEf.pdb

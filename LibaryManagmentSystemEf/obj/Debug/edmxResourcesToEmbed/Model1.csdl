@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibaryManagmentSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TblBook">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Author" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ISBN" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Publication" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="TblBorrow" Relationship="Self.FK_TblBorrow_TblBook" FromRole="TblBook" ToRole="TblBorrow" />
+  </EntityType>
+  <EntityType Name="TblBorrow">
+    <Key>
+      <PropertyRef Name="BorrowID" />
+    </Key>
+    <Property Name="BorrowID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookID" Type="Int32" />
+    <Property Name="MemberID" Type="Int32" />
+    <Property Name="DateBorrow" Type="DateTime" Precision="0" />
+    <Property Name="DateReturn" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="TblBook" Relationship="Self.FK_TblBorrow_TblBook" FromRole="TblBorrow" ToRole="TblBook" />
+    <NavigationProperty Name="TblMember" Relationship="Self.FK_TblBorrow_TblMember" FromRole="TblBorrow" ToRole="TblMember" />
+  </EntityType>
+  <EntityType Name="TblMember">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MemberSurname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MemberPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MemberEmail" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TblBorrow" Relationship="Self.FK_TblBorrow_TblMember" FromRole="TblMember" ToRole="TblBorrow" />
+  </EntityType>
+  <EntityType Name="TblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="UserType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_TblBorrow_TblBook">
+    <End Role="TblBook" Type="Self.TblBook" Multiplicity="0..1" />
+    <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblBook">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="TblBorrow">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblBorrow_TblMember">
+    <End Role="TblMember" Type="Self.TblMember" Multiplicity="0..1" />
+    <End Role="TblBorrow" Type="Self.TblBorrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblMember">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="TblBorrow">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibaryManagmentSystemEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblBook" EntityType="Self.TblBook" />
+    <EntitySet Name="TblBorrow" EntityType="Self.TblBorrow" />
+    <EntitySet Name="TblMember" EntityType="Self.TblMember" />
+    <EntitySet Name="TblUser" EntityType="Self.TblUser" />
+    <AssociationSet Name="FK_TblBorrow_TblBook" Association="Self.FK_TblBorrow_TblBook">
+      <End Role="TblBook" EntitySet="TblBook" />
+      <End Role="TblBorrow" EntitySet="TblBorrow" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblBorrow_TblMember" Association="Self.FK_TblBorrow_TblMember">
+      <End Role="TblMember" EntitySet="TblMember" />
+      <End Role="TblBorrow" EntitySet="TblBorrow" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
